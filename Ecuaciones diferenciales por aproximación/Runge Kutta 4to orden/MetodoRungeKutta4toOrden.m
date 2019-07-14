@@ -1,0 +1,11 @@
+clear all;
+clc;
+format long;
+syms x y;
+f = input('Digite la función f(x,y): ');
+a = input('Digite el valor inicial para x: ');
+b = input('Digite el valor final para x: ');
+y1 = input('Digite el valor inicial para y: ');
+h = input('Digite el paso: ');
+[yn] = RK4(f, a, b, y1, h);
+fprintf('La solución para la ecuación diferencial es: %f',yn);

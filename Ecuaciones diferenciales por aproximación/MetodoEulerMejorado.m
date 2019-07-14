@@ -1,0 +1,12 @@
+clear all;
+clc;
+format long;
+syms x y;
+ec = input('Digite la función f(x,y): ');
+x_0 = input('Digite el valor para x0: ');
+y_0 = input('Digite el valor para y0: ');
+h = input('Digite el valor de h: ');
+yPrima = y_0 + h*subs(ec,{x,y}, {x_0, y_0});
+X_nplus1 = x_0 + h;
+Y_nPlus1 = y_0 + h * ((subs(ec,{x,y},{x_0,y_0})+subs(ec,{x,y},{X_nplus1, yPrima}))/2);
+fprintf('La solución para la ecuación diferencial es: %f',Y_nPlus1);
