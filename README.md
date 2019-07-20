@@ -1,4 +1,4 @@
-# Soluciones computaciones a problemas de ingeniería
+# Soluciones computacionales a problemas de ingeniería
 ## Búsqueda de raices
 Incluye los métodos de: bisección, Newton - Raphson, secante, falsa posición, punto fijo.
 ## Interpolación funcional
